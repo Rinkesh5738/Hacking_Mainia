@@ -17,14 +17,15 @@
 
 
      <?php
+     include "db_conn.php";
 
-if( isset( $_GET['submit'])){
+    if( isset( $_GET['submit'])){
     // Get input
     $id = $_GET['uid'];
 
     // Check database
-    $getid  = "SELECT name FROM users WHERE id = '$id';";
-    $result = mysqli_query($GLOBALS["___mysqli_ston"],  $getid ); // Removed 'or die' to suppress mysql errors
+    $getid  = "SELECT fname FROM users WHERE id = '$id';";
+    $result = mysqli_query($conn,$getid ); // Removed 'or die' to suppress mysql errors
 
     // Get results
     $num = @mysqli_num_rows( $result ); // The '@' character suppresses errors
@@ -40,7 +41,7 @@ if( isset( $_GET['submit'])){
         echo '<pre>User ID is MISSING from the database.</pre>';
     }
 
-    ((is_null($___mysqli_res = mysqli_close($GLOBALS["___mysqli_ston"]))) ? false : $___mysqli_res);
+    //((is_null($___mysqli_res = mysqli_close($GLOBALS["___mysqli_ston"]))) ? false : $___mysqli_res);
 }
 
 ?>  
