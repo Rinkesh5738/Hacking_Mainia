@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Find User</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Hacking Mania</title>
+    <link rel="stylesheet" type="text/css" href="style2.css">
 </head>
 <body>
     <div>
-    <header><b>Hacking Mania</b></header>
+    <header><b>Let's Exploit</b></header>
      <form method="get">
-        <h2>LOGIN</h2>
+        <h2>Find Users </h2>
         <label id="label3">User ID</label>
         <input type="text" name="uid" placeholder="Enter User Id Number"><br>
         <a href="logout.php">Logout</a>

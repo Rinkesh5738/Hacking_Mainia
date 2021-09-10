@@ -7,16 +7,17 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>HOME</title>
+    <title>Hacking Mania</title>
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
 </head>
 <body >
     <center>
-    <header><b>Hacking Mania</b></header>
+    <header><b>Let's Exploit</b></header>
 
-    <h1>Hello, <?php echo $_SESSION['name']; ?></h1>
+    <h1>Welcome, <?php echo $_SESSION['name']; ?></h1>
      <form methiod="post">
+     <h2>Find User's Cookie </h2>
      <input type="text" name="name">
      <input type="submit" value="submit">
      <br>

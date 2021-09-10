@@ -1,0 +1,127 @@
+body {
+    background-image: url("https://higgsjohnson.com/wp-content/uploads/2019/05/Securities.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+  }
+  div {
+    text-align: center;
+  }
+  header{
+    font-family: serif;
+    text-shadow: 2px 2px;
+    margin-top: 25px;
+    padding: 10px;
+    font-size: 70px;
+    color: rgb(105, 102, 107);
+    /*background-color: rgb(0, 0,0);*/
+  }
+  
+  * {
+    font-family: sans-serif;
+    box-sizing: border-box;
+  }
+  
+  form {
+    margin-top: 120px;
+    width: 600px;
+    border: 5px solid rgb(7, 7, 7);
+    padding: 50px;
+    background: rgb(17, 17, 17);
+    border-radius: 20px;
+    display: inline-block;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-top: 0px;
+    color: rgb(18, 124, 124);
+    margin-bottom: 30px;
+  }
+  
+  input {
+    display: block;
+    border: 2px solid #ccc;
+    width: 95%;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+  }
+  #label1 {
+    margin-right: 370px;
+    color: #888;
+    font-size: 18px;
+    padding: 10px;
+  }
+  #label2 {
+    margin-right: 380px;
+    color: #888;
+    font-size: 18px;
+    padding: 10px;
+  }
+  #label3 {
+    margin-right: 400px;
+    color: #888;
+    font-size: 18px;
+    padding: 10px;
+  }
+  
+  button {
+    float: right;
+    background: #555;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  #submitbtn {
+      float: right;
+    background: #555;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  button:hover {
+    opacity: 0.7;
+  }
+  .error {
+    background: #f2dede;
+    color: #a94442;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+    margin: 20px auto;
+  }
+  
+  h1 {
+    
+    margin-top: 55px;
+    text-align: center;
+    color: rgb(0, 0, 0);;
+    font-size: 50px;
+  }
+  
+  a {
+    align-items: center;
+    float: right;
+    background: #555;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+  }
+  a:hover {
+    opacity: 0.7;
+  }
+  
+  #message{
+    @if $num > 0 {
+      color: white;
+    }
+    @else{
+      color: red;
+    }
+  }
+  
