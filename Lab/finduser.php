@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Find User</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <title>Find User</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+    <div>
+    <header><b>Hacking Mania</b></header>
      <form method="get">
-     	<h2>LOGIN</h2>
-     	<label>User ID</label>
-     	<input type="text" name="uid" placeholder="number"><br>
+        <h2>LOGIN</h2>
+        <label id="label3">User ID</label>
+        <input type="text" name="uid" placeholder="Enter User Id Number"><br>
+        <a href="logout.php">Logout</a>
 
-     	<button type="submit" name="submit">Find</button>
-
-         <a href="login.php">Login</a>
+        <button type="submit" name="submit" id="submitbtn">Find</button>
+         
      </form>
-
+     </div>
+     
+     <div id="message" >
 
      <?php
      include "db_conn.php";
@@ -45,5 +49,7 @@
 }
 
 ?>  
+</div>
+
 </body>
 </html>
