@@ -7,7 +7,7 @@
 </head>
 <body>
 	<div>
-    <header><b>Hacker Mania</b></header>
+    <header><b>Hacking Mania</b></header>
      <form action="login.php" method="get">
      	<h2>LOGIN</h2>
         <?php if (isset($_GET['error'])) { ?>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hacking Mania</title>
+    <title>Find User</title>
     <link rel="stylesheet" type="text/css" href="style2.css">
 </head>
 <body>
@@ -35,14 +35,18 @@
     $num = @mysqli_num_rows( $result ); // The '@' character suppresses errors
     if( $num > 0 ) {
         // Feedback for end user
+        echo '<h3>';
         echo '<pre>User ID exists in the database.</pre>';
+        echo '</h3>';
     }
     else {
         // User wasn't found, so the page wasn't!
         header( $_SERVER[ 'SERVER_PROTOCOL' ] . ' 404 Not Found' );
 
         // Feedback for end user
+        echo '<h3>';
         echo '<pre>User ID is MISSING from the database.</pre>';
+        echo '</h3>';
     }
 
     //((is_null($___mysqli_res = mysqli_close($GLOBALS["___mysqli_ston"]))) ? false : $___mysqli_res);
